@@ -1,0 +1,27 @@
+{
+  "name": "@datalayer/datalayer-action",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Composable GitHub Actions that expose the Datalayer (@datalayer/core) TypeScript SDK for CI/CD.",
+  "license": "BSD-3-Clause",
+  "author": "Datalayer <info@datalayer.io>",
+  "homepage": "https://github.com/goanpeca/datalayer-action#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goanpeca/datalayer-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goanpeca/datalayer-action/issues"
+  },
+  "type": "module",
+  "keywords": [
+    "datalayer",
+    "github-actions",
+    "ci",
+    "jupyter",
+    "runtime",
+    "notebook",
+    "sdk"
+  ],
+  "scripts": {}
+}
