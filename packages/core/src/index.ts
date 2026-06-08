@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Datalayer, Inc.
+ * Distributed under the terms of the Modified BSD License.
+ */
+
 /**
  * `@datalayer/action-core` — shared building blocks for the Datalayer GitHub
  * Actions suite (client factory, IO, masking, retry, summaries).

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Datalayer, Inc.
+ * Distributed under the terms of the Modified BSD License.
+ */
+
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { resolveToken, VERSION } from './index.js';
