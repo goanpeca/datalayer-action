@@ -30,11 +30,11 @@ Please include as much of the following as you can:
 
 Security fixes are provided for the latest release and the moving major tag.
 
-| Version                                       | Supported                          |
-| --------------------------------------------- | ---------------------------------- |
-| Latest `0.x` release                          | :white_check_mark:                 |
-| Moving major tag (e.g. `v1`, once released)   | :white_check_mark:                 |
-| Older tags / pinned commit SHAs               | :warning: Upgrade to latest        |
+| Version                                     | Supported                   |
+| ------------------------------------------- | --------------------------- |
+| Latest `0.x` release                        | :white_check_mark:          |
+| Moving major tag (e.g. `v1`, once released) | :white_check_mark:          |
+| Older tags / pinned commit SHAs             | :warning: Upgrade to latest |
 
 Because GitHub Actions consumers may pin to a specific tag or commit SHA, we
 strongly recommend tracking the moving major tag (or enabling Dependabot
