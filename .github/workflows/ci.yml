@@ -44,6 +44,8 @@ jobs:
         run: npm run lint:spell
       - name: Test + coverage
         run: npm run test:coverage
+      - name: Build API docs
+        run: npm run docs:api
 
   actionlint:
     name: actionlint
