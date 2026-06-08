@@ -30,8 +30,8 @@ export default tseslint.config(
     },
   },
   {
-    // JS / config files are not part of a tsconfig project: disable type-aware rules.
-    files: ['**/*.{js,cjs,mjs}'],
+    // JS and root config files are not part of a tsconfig project: no type-aware rules.
+    files: ['**/*.{js,cjs,mjs}', '**/*.config.ts'],
     ...tseslint.configs.disableTypeChecked,
   },
   // Keep ESLint out of Prettier's lane (must be last).
