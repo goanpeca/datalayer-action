@@ -38,5 +38,22 @@ jobs:
         run: npm run lint
       - name: Format check
         run: npm run format:check
+      - name: Markdown lint
+        run: npm run lint:md
+      - name: Spell check
+        run: npm run lint:spell
       - name: Test + coverage
         run: npm run test:coverage
+
+  actionlint:
+    name: actionlint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - name: Run actionlint
+        run: |
+          go install github.com/rhysd/actionlint/cmd/actionlint@v1.7.12
+          "$(go env GOPATH)/bin/actionlint" -color
