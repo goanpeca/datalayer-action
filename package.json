@@ -2,6 +2,10 @@
   "name": "@datalayer/datalayer-action",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "actions/*"
+  ],
   "description": "Composable GitHub Actions that expose the Datalayer (@datalayer/core) TypeScript SDK for CI/CD.",
   "license": "BSD-3-Clause",
   "author": "Datalayer <info@datalayer.io>",
