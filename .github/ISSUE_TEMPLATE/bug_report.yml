@@ -13,7 +13,7 @@ body:
     id: action
     attributes:
       label: Which action / version?
-      placeholder: goanpeca/datalayer-action/create-runtime@v1
+      placeholder: goanpeca/datalayer-action/actions/create-runtime@v1
     validations:
       required: true
   - type: textarea
