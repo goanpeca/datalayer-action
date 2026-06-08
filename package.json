@@ -31,5 +31,10 @@
     "notebook",
     "sdk"
   ],
-  "scripts": {}
+  "scripts": {
+    "type-check": "tsc --build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
