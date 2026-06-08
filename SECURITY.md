@@ -53,6 +53,17 @@ We follow **coordinated disclosure**:
 We ask that you give us a reasonable opportunity to remediate the issue before
 any public disclosure.
 
+## Automated security scanning
+
+In addition to this policy, the repository runs automated security tooling in CI:
+
+- **CodeQL** — static analysis of the TypeScript sources.
+- **OpenSSF Scorecard** — supply-chain and repository-posture checks.
+- **zizmor** — security auditing of the GitHub Actions workflows themselves.
+- **Dependabot** — dependency and GitHub Actions updates.
+
+Findings surface in the repository's **Security → Code scanning** tab.
+
 ## Scope
 
 This policy covers:

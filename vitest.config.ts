@@ -12,6 +12,9 @@ export default defineConfig({
       include: ['{packages,actions}/*/src/**/*.ts'],
       exclude: ['**/*.test.ts', '**/*.d.ts'],
       thresholds: {
+        // Apply thresholds per file so a new untested file can't hide behind
+        // the global average.
+        perFile: true,
         lines: 90,
         statements: 90,
         functions: 90,

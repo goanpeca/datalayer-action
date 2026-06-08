@@ -13,11 +13,8 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
 
-    // Project references / emit (per-workspace tsconfigs extend this).
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    // Type-check only — esbuild produces the action bundles; tsc never emits.
+    "noEmit": true,
 
     // Strictness — the highest. `strict` enables the core family; the rest are
     // the additional opt-in checks that make this as strict as TypeScript allows.
