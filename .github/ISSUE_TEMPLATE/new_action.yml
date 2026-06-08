@@ -1,0 +1,24 @@
+name: New action
+description: Propose a new verb-action that exposes an SDK capability
+labels: ['type: feature']
+body:
+  - type: input
+    id: verb
+    attributes:
+      label: Action name (verb)
+      placeholder: create-runtime
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Proposed inputs
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Proposed outputs
+  - type: input
+    id: sdk
+    attributes:
+      label: SDK method(s)
+      placeholder: client.createRuntime(...)

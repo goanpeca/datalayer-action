@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a problem with a Datalayer action
+labels: ['type: bug']
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and the expected behavior.
+    validations:
+      required: true
+  - type: input
+    id: action
+    attributes:
+      label: Which action / version?
+      placeholder: goanpeca/datalayer-action/create-runtime@v1
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: A minimal workflow snippet if possible.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: shell
