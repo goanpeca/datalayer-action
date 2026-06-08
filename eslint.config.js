@@ -2,6 +2,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import prettier from 'eslint-config-prettier';
+import tsdoc from 'eslint-plugin-tsdoc';
 
 export default tseslint.config(
   {
@@ -28,6 +29,12 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/no-misused-promises': 'error',
     },
+  },
+  {
+    // Enforce valid TSDoc comment syntax on TypeScript sources.
+    files: ['**/*.ts'],
+    plugins: { tsdoc },
+    rules: { 'tsdoc/syntax': 'error' },
   },
   {
     // JS and root config files are not part of a tsconfig project: no type-aware rules.

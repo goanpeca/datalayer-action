@@ -10,7 +10,7 @@ Instead, report them privately using
 [GitHub's private vulnerability reporting](https://github.com/goanpeca/datalayer-action/security/advisories/new)
 — the **Report a vulnerability** button under the repository's **Security** tab.
 
-If you are unable to use GitHub private reporting, email **info@datalayer.io**
+If you are unable to use GitHub private reporting, email **<info@datalayer.io>**
 with `SECURITY` in the subject line and the details described below.
 
 You should receive an acknowledgement within **3 business days**. If you do not,
