@@ -13,4 +13,4 @@ Closes #
 - [ ] `npm test` passes and coverage thresholds hold
 - [ ] `npm run lint:md` and `lint:spell` pass
 - [ ] Docs updated (README / per-action README) where relevant
-- [ ] Meets the [Definition of Done](../docs/definition-of-done.md)
+- [ ] Meets the [Definition of Done](https://github.com/goanpeca/datalayer-action/blob/main/docs/definition-of-done.md)

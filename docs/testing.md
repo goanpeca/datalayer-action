@@ -22,7 +22,8 @@ unless the gated integration workflow injects a real `DATALAYER_API_KEY`.
 - **Co-locate** unit tests next to source as `<name>.test.ts`.
 - **One behavior per `it`**; name tests by the behavior, not the method.
 - **No real network** in unit/integration/contract layers — HTTP is mocked with
-  [MSW](https://mswjs.io). Fixtures live in `packages/core/src/test/`.
+  [MSW](https://mswjs.io). MSW handlers and fixtures live alongside the package
+  they support and are introduced with the first HTTP client.
 - **Deterministic env** — manipulate environment variables with `vi.stubEnv` /
   `vi.unstubAllEnvs`, never by mutating `process.env` directly.
 
