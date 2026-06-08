@@ -1,5 +1,5 @@
 {
   "//": "Solution-style root config. Each workspace under packages/* and actions/* has its own tsconfig that extends ./tsconfig.base.json and is added to `references` as it lands. `npm run type-check` (tsc --build) type-checks the whole solution.",
   "files": [],
-  "references": []
+  "references": [{ "path": "packages/core" }]
 }

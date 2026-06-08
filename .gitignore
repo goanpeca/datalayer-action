@@ -1,8 +1,9 @@
 # Dependencies
 node_modules/
 
-# TypeScript incremental build info
+# TypeScript build output (tsc --build emits per-package lib/)
 *.tsbuildinfo
+lib/
 
 # Test / coverage output
 coverage/
