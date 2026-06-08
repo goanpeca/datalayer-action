@@ -35,7 +35,7 @@
     "type-check": "tsc --build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint .",
+    "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
     "test": "vitest run",
@@ -45,13 +45,6 @@
     "lint:md": "markdownlint-cli2",
     "lint:spell": "cspell --no-progress \"**/*.{ts,md}\""
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,cjs,mjs}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,jsonc,md,yml,yaml,css}": "prettier --write"
-  },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
@@ -60,6 +53,8 @@
     "cspell": "^10.0.1",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-tsdoc": "^0.5.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
