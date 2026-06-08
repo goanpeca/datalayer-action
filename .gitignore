@@ -9,6 +9,9 @@ lib/
 coverage/
 .vitest/
 
+# Generated API docs (TypeDoc)
+docs/api/
+
 # Logs
 *.log
 npm-debug.log*
