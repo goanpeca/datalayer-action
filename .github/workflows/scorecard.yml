@@ -3,9 +3,8 @@ name: Scorecard
 on:
   push:
     branches: [main]
-  pull_request:
   schedule:
-    - cron: '31 4 * * 2'
+    - cron: "31 4 * * 2"
   workflow_dispatch:
 
 permissions:
