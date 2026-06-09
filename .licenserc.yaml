@@ -1,0 +1,25 @@
+header:
+  license:
+    spdx-id: BSD-3-Clause
+    copyright-owner: Datalayer, Inc.
+    copyright-year: '2026'
+    content: |
+      Copyright (c) [year] [owner]
+      Distributed under the terms of the Modified BSD License.
+
+  paths-ignore:
+    - '**/*.json'
+    - '**/*.jsonc'
+    - '**/*.md'
+    - '**/*.yaml'
+    - '**/*.yml'
+    - '**/.*'
+    - '**/dist'
+    - '**/lib'
+    - '**/node_modules'
+    - '**/*.config.ts'
+    - 'eslint.config.js'
+    - 'LICENSE'
+    - 'docs/api'
+
+  comment: on-failure

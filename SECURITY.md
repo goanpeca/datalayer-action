@@ -10,7 +10,7 @@ Instead, report them privately using
 [GitHub's private vulnerability reporting](https://github.com/goanpeca/datalayer-action/security/advisories/new)
 — the **Report a vulnerability** button under the repository's **Security** tab.
 
-If you are unable to use GitHub private reporting, email **info@datalayer.io**
+If you are unable to use GitHub private reporting, email **<info@datalayer.io>**
 with `SECURITY` in the subject line and the details described below.
 
 You should receive an acknowledgement within **3 business days**. If you do not,
@@ -30,11 +30,11 @@ Please include as much of the following as you can:
 
 Security fixes are provided for the latest release and the moving major tag.
 
-| Version                                       | Supported                          |
-| --------------------------------------------- | ---------------------------------- |
-| Latest `0.x` release                          | :white_check_mark:                 |
-| Moving major tag (e.g. `v1`, once released)   | :white_check_mark:                 |
-| Older tags / pinned commit SHAs               | :warning: Upgrade to latest        |
+| Version                                     | Supported                   |
+| ------------------------------------------- | --------------------------- |
+| Latest `0.x` release                        | :white_check_mark:          |
+| Moving major tag (e.g. `v1`, once released) | :white_check_mark:          |
+| Older tags / pinned commit SHAs             | :warning: Upgrade to latest |
 
 Because GitHub Actions consumers may pin to a specific tag or commit SHA, we
 strongly recommend tracking the moving major tag (or enabling Dependabot
@@ -52,6 +52,17 @@ We follow **coordinated disclosure**:
 
 We ask that you give us a reasonable opportunity to remediate the issue before
 any public disclosure.
+
+## Automated security scanning
+
+In addition to this policy, the repository runs automated security tooling in CI:
+
+- **CodeQL** — static analysis of the TypeScript sources.
+- **OpenSSF Scorecard** — supply-chain and repository-posture checks.
+- **zizmor** — security auditing of the GitHub Actions workflows themselves.
+- **Dependabot** — dependency and GitHub Actions updates.
+
+Findings surface in the repository's **Security → Code scanning** tab.
 
 ## Scope
 

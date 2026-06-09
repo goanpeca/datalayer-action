@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Generated action bundles (built by esbuild; committed but not hand-formatted)
+**/dist/
+
+# Build / type info
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+*.lcov
+
+# Generated API docs
+docs/api/
+
+# Jupyter notebook fixtures (raw JSON)
+*.ipynb
+
+# OS / logs
+.DS_Store
+*.log

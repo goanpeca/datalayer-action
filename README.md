@@ -11,19 +11,19 @@
 ## Repository layout
 
 ```text
-datalayer-action/
-├── <verb>/action.yml      # one composable action per verb (create-runtime, exec, …)
-├── src/
-│   ├── common/            # shared client factory, IO, masking, retry, summaries
-│   └── actions/<verb>/    # per-action TypeScript entrypoints
-├── .github/workflows/     # CI quality gates + security scanning
-└── …
+datalayer-action/                 # npm-workspaces monorepo
+├── packages/
+│   └── core/                     # @datalayer/action-core — shared client factory, IO, masking, retry, summaries
+├── actions/
+│   └── <verb>/                   # one workspace per verb-action: action.yml + src + bundled dist
+├── .github/workflows/            # CI quality gates + security scanning
+└── package.json                  # root (private) workspace config + shared tooling
 ```
 
 Each action is consumed by sub-path, e.g.:
 
 ```yaml
-- uses: goanpeca/datalayer-action/create-runtime@v1
+- uses: goanpeca/datalayer-action/actions/create-runtime@v1
   with:
     token: ${{ secrets.DATALAYER_API_KEY }}
     environment: python-cpu-env
