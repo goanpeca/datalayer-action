@@ -26,20 +26,9 @@ jobs:
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           persist-credentials: false
-      - name: Setup Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
-        with:
-          python-version: '3.12'
-      - name: Install zizmor
-        run: pip install zizmor==1.25.2
       - name: Run zizmor
-        run: zizmor --format sarif . > results.sarif
-        env:
-          GH_TOKEN: ${{ github.token }}
-      # Skip the code-scanning upload for fork PRs (no security-events: write); the audit itself still runs and gates.
-      - name: Upload to code scanning
-        if: ${{ always() && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) }}
-        uses: github/codeql-action/upload-sarif@dd903d2e4f5405488e5ef1422510ee31c8b32357 # v3
+        uses: zizmorcore/zizmor-action@5f14fd08f7cf1cb1609c1e344975f152c7ee938d # v0.5.6
         with:
-          sarif_file: results.sarif
-          category: zizmor
+          version: 1.25.2
+          # Upload SARIF to code scanning, except on fork PRs (which lack security-events: write).
+          advanced-security: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
