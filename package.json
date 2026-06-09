@@ -46,7 +46,7 @@
     "lint:spell": "cspell --no-progress \"**/*.{ts,md,yml,yaml,json,jsonc,js,cjs,mjs}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^21.0.2",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.29.0",
     "@types/node": "^22.19.20",
